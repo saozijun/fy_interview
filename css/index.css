@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+body {
+  background-color: #f5f5f5;
+}
+.btn {
+  width: 100px;
+  height: 34px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  background-color: #1677ff;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+input[type="date"] {
+  position: relative;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  right: 0;
+  padding-left: calc(100% - 30px);
+}
+.d_btn {
+  background-color: #fff;
+  border: 1px solid #1677ff;
+  color: #1677ff;
+}
+.table {
+  width: 1480px;
+  margin: 40px auto;
+  border: 1px solid #e7e7e7;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.table .nav ul {
+  display: flex;
+}
+.table .nav ul li {
+  padding: 10px 20px;
+  border: 1px solid #e7e7e7;
+  margin-right: 20px;
+  font-size: 14px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+.table .nav ul li:hover {
+  background-color: #1677ff;
+  color: #fff;
+}
+.table .nav ul .active {
+  background-color: #1677ff;
+  color: #fff;
+}
+.table .screen_box {
+  margin-top: 20px;
+}
+.table .screen_box input,
+.table .screen_box select {
+  padding: 8px 10px;
+  width: 170px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  border: 1px solid #e7e7e7;
+}
+.table .screen_box .screen_box_t {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.table .screen_box .screen_box_b {
+  display: flex;
+  justify-content: space-between;
+}
+.table .screen_box .screen_box_b > div {
+  display: flex;
+  align-items: center;
+}
+.table .screen_box .screen_box_b > div .btn_box {
+  margin-left: 20px;
+}
+.table .screen_box .screen_box_b > div .btn_box .btn {
+  margin-left: 20px;
+}
+.table .content {
+  width: 100%;
+  margin: 50px 0;
+}
+.table .content table {
+  width: 100%;
+  border-color: #ffffff;
+  font-size: 14px;
+}
+.table .content table tr:last-child,
+.table .content table tr:first-child {
+  background-color: #ececec;
+}
+.table .content table td,
+.table .content table th {
+  padding: 8px 10px;
+  border-color: #ffffff;
+  font-weight: 200;
+}
+.op {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 50px;
+}
+.op ul {
+  display: flex;
+}
+.op > div,
+.op li {
+  width: 35px;
+  height: 30px;
+  border: 1px solid #e7e7e7;
+  margin-left: 10px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  font-size: 12px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.op > div:hover,
+.op li:hover {
+  border: 1px solid #1677ff;
+}
+.op .op_active {
+  border: 1px solid #1677ff;
+}
+.op > div {
+  color: #1677ff;
+}

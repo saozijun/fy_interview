@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测试</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div class="table">
+        <div class="nav">
+            <ul id="tabs">
+                <li class="active">按订单汇总</li>
+                <li>按商品汇总</li>
+                <li>按客户汇总</li>
+                <li>按日汇总</li>
+            </ul>
+        </div>
+        <div class="screen_box">
+            <div class="screen_box_t">
+                <input id="number" type="text" placeholder="采购编码">
+                <input id="SupplierName" type="text" placeholder="供应商名称">
+                <input id="ProductName" type="text" placeholder="商品名称">
+                <input id="ProductAlias" type="text" placeholder="商品别名">
+                <select name="" id="ProductCategory">
+                    <option value="" disabled selected>商品分类</option>  
+                    <option value="分类1">分类1</option>
+                    <option value="分类2">分类2</option>
+                    <option value="分类3">分类3</option>
+                </select>
+                <select name="" id="ProductUnit">
+                    <option value="" disabled selected>商品单位</option>  
+                    <option value="单位1">单位1</option>
+                    <option value="单位2">单位2</option>
+                    <option value="单位3">单位3</option>
+                </select>
+                <select name="" id="DocumentStatus">
+                    <option value="" disabled selected>单据状态</option>  
+                    <option value="已完成">已完成</option>
+                    <option value="已预定">已预定</option>
+                </select>
+            </div>
+            <div class="screen_box_b">
+                <div>
+                    <div class="screen_box_b_date">
+                        <input type="date" placeholder="1"> 至 <input type="date">
+                    </div>
+                    <div class="btn_box">
+                        <button class="btn" id="screen">查询</button>
+                        <button class="btn d_btn" id="reset">重置</button>
+                    </div>
+                </div>
+                <button class="btn">导出</button>
+            </div>
+        </div>
+        <div class="content">
+            <table border="1" cellpadding="10" cellspacing="0">
+                <tr>
+                    <th>采购编码</th>
+                    <th>供应商名称</th>
+                    <th>商品名称</th>
+                    <th>商品别名</th>
+                    <th>商品分类</th>
+                    <th>商品单位</th>
+                    <th>采购单价</th>
+                    <th>采购数量</th>
+                    <th>入库数量</th>
+                    <th>采购重量</th>
+                    <th>采购金额</th>
+                    <th>单据状态</th>
+                    <th>创建时间</th>
+                </tr>
+            </table>
+            <div class="op">
+                <div onclick="nextL()"><</div>
+                <ul id="op_box">
+                    <li class="op_active">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                </ul>
+                <div onclick="nextR()">></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
